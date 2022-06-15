@@ -15,7 +15,7 @@
 #define cs_ac "oscam.ac"
 
 static FILE *ac_log;
-static uchar  ac_ecmd5[CS_ECMSTORESIZE];
+static uint8_t ac_ecmd5[CS_ECMSTORESIZE];
 
 bool anticasc_logging(char *txt)
 {
@@ -240,7 +240,7 @@ static void ac_load_config(void)
 		uint32_t  provid;
 		char *ptr, *ptr1;
 
-		if(strlen(token) < 4) { continue; }
+		if(cs_strlen(token) < 4) { continue; }
 
 		caid = sid = chid = dwtime = 0;
 		provid = 0;

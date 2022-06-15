@@ -6,6 +6,9 @@ Distribution/list_smargo-*
 *~
 *.swp
 
+# IDE resources
+.vscode
+
 # build directories
 /build/
 
@@ -16,14 +19,6 @@ webif/is_defined.txt
 tests.bin
 tests.bin.debug
 
-# OSCam-Emu files
-.vscode
-cscrypt/viades.c
-cscrypt/viades.h
-dre2overcrypt.c
-dre2overcrypt.h
-via3surenc.c
-via3surenc.h
-SoftCam.Key
-git-svn-diff.sh
-oscam-emu.patch
+# Emu files
+*.patch
+SoftCam.*
